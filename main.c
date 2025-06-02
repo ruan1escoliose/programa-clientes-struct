@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 struct dados {
     int codigo;
     char nome[50];
@@ -36,7 +34,7 @@ int main() {
         printf("Código: ");
         scanf("%d", &cliente[i].codigo);
         printf("Nome: ");
-        getchar(); // limpar buffer
+        getchar();
         fgets(cliente[i].nome, 50, stdin);
         printf("Idade: ");
         scanf("%d", &cliente[i].idade);
